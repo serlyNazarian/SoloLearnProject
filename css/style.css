@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #dce1e4;
+  width: 100%;
+  height: 100%;
+  font-family: "Fira Sans";
+}
+.NavbarContainer {
+  background-color: #f9f9fa;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 115px;
+  justify-content: space-between;
+}
+.Left-Navbar {
+  width: 20%;
+  height: 110px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.Right-Navbar {
+  height: 110px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.Right-Navbar a {
+  text-decoration: none;
+  color: black;
+  margin-left: 40px;
+}
+.Right-Navbar a:visited {
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+.Right-Navbar button {
+  margin-left: 40px;
+  margin-right: 10px;
+  width: 160px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffa310;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.navbarProfileClass {
+  width: 20%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbarProfileClass img {
+  border-radius: 10px;
+}
+.Main-Content {
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Main-Content h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.Main-Content-Grid {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 8px;
+  height: 224px;
+  width: 280px;
+  margin: 10px;
+}
+.grid-item img {
+  height: 88px;
+  width: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.grid-item p {
+  margin-top: 16px;
+  font-weight: bold;
+  line-height: 110%;
+}

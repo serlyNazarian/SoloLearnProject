@@ -1,0 +1,126 @@
+@text: #2d3846;
+@background: #f9f9fa;
+@modal: #fff;
+@border-color: #c8d2db;
+@action-button-text: #2493df;
+@action-button-hover: #dbe6eb;
+@text-secondary: #6b7f99;
+@text-hover: #eaf0f3;
+@main-background: #dce1e4;
+@button-orange: #ffa310;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: @main-background;
+  width: 100%;
+  height: 100%;
+  font-family: "Fira Sans";
+}
+
+.NavbarContainer {
+  background-color: @background;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 115px;
+  justify-content: space-between;
+}
+
+.Left-Navbar {
+  width: 20%;
+  height: 110px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.Right-Navbar {
+  height: 110px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: black;
+    margin-left: 40px;
+  }
+  a:visited {
+    outline: none;
+    text-decoration: none;
+    color: black;
+  }
+  button {
+    margin-left: 40px;
+    margin-right: 10px;
+    width: 160px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: @button-orange;
+    font-weight: bolder;
+    font-size: 15px;
+  }
+}
+
+.navbarProfileClass {
+  width: 20%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  img {
+    border-radius: 10px;
+  }
+}
+
+.Main-Content {
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+}
+
+.Main-Content-Grid {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 8px;
+  height: 224px;
+  width: 280px;
+  // padding: 16px 16px 16px;
+  margin: 10px;
+  img {
+    height: 88px;
+    width: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  p {
+    margin-top: 16px;
+    font-weight: bold;
+    line-height: 110%;
+  }
+}
